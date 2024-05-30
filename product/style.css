@@ -1,5 +1,4 @@
-/* author: https://codepen.io/yudizsolutions/pen/PoLJQOa
-Yudiz Solutions Limited */
+/* author: https://codepen.io/yudizsolutions/pen/PoLJQOa Yudiz Solutions Limited */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,24 +25,42 @@ p{color: #FFF; font-family: Montserrat; font-size: 18px; font-style: normal; fon
 .social-icons img{width: 22px;height: 22px;}
 
 /* Features Section */
-.features {
-    margin-top: 40px; /* Ajusta el margen superior según sea necesario */
-    color: #FFF; 
+.image-description {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 40px 20px; /* Espaciado interno */
+    color: #333; /* Color de texto */
 }
 
-.features h2 {
-    margin-bottom: 20px; /* Espacio entre el título y la lista */
+.image-description h2 {
+    margin-bottom: 20px; /* Espacio inferior del título */
+    font-size: 24px; /* Tamaño de fuente del título */
 }
 
-.features ul {
-    list-style-type: disc; /* Puedes cambiarlo a circle o square si prefieres */
-    padding-left: 20px; /* Indentación de la lista */
+.image-description ul {
+    list-style-type: disc; /* Tipo de lista */
+    padding-left: 20px; /* Sangría de la lista */
 }
 
-.features ul li {
-    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
-    font-size: 18px; /* Tamaño de fuente de los elementos de la lista */
-    line-height: 28px; /* Altura de línea de los elementos de la lista */
+.image-description ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    font-size: 18px; /* Tamaño de fuente de los elementos */
+    line-height: 28px; /* Altura de línea de los elementos */
+}
+
+/* Contact Button */
+.contact-button {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s; /* Transición de color */
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
 }
 
 /* images */
@@ -102,31 +119,26 @@ p{color: #FFF; font-family: Montserrat; font-size: 18px; font-style: normal; fon
     .slider-images > img {width: 453px; height: auto;aspect-ratio: 1/1.3;}    
 }
 @media screen and (max-width: 991px) {
-    .logo a img{width: 210px;}
-    .heading-style-2{font-size: 35px; line-height: 43px; margin-bottom: 22px;}
+    .logo a img{width: 200px;}
+    .heading-style-2{font-size: 35px;line-height: 42px;margin-bottom: 25px;}
     p{font-size: 16px; line-height: 26px; margin-bottom: 18px;}
-    .container{left: calc(50% - (720px/2)); padding-block: 70px; max-width: 405px; } 
-    .slider-images{width: 45%;}  
-    .slider-images > img {width: 340px;aspect-ratio: 1/1.3;}    
+    .container{left: calc(50% - (720px/2)); padding-block: 60px; max-width: 375px; }
+    .slider-images > img {width: 353px;height: auto; aspect-ratio: 1/1.3; }
 }
 @media screen and (max-width: 767px) {
-    .logo a img{width: 200px;}
-    .logo a{margin-bottom: 20px;}
-    .slider-main{flex-direction: column;min-height: 900px;}
-    .social-icons a{width: 35px;height: 35px;}
-    .social-icons img{width: 16px;height: 16px;}
-    .container{position: unset; padding-block: 70px; max-width: 540px;width: 100%; } 
-    .slider-images{width: 100%;}  
-    .slider-images > img {height: 380px;aspect-ratio: 1/1.3; width: auto;} 
-    .slider-images > img.active{top: 45%;left: 50%;}   
+    .logo a img{width: 180px;}
+    .container{left: 0;right: 0;top: 50px; padding-block: 50px; left: unset; width: 100%; padding-inline: 15px; max-width: unset; }
+    .heading-style-2{font-size: 30px;line-height: 40px;margin-bottom: 20px;}
+    p{font-size: 15px; line-height: 24px; margin-bottom: 15px;}
+    .slider-images{position: absolute; bottom: 15px; width: 55%; }
+    .slider-images > img {width: 270px;height: auto; aspect-ratio: 1/1.3; }
 }
 @media screen and (max-width: 575px) {
     .logo a img{width: 180px;}
-    .logo a{margin-bottom: 18px;}
-    .heading-style-2{font-size: 30px; line-height: 37px; margin-bottom: 16px; }
-    p{font-size: 15px; line-height: 24px; margin-bottom: 16px;}
-    .container{padding-block: 60px;} 
-    .slider-images{width: 100%;}  
-    .slider-images > img {height: 300px;aspect-ratio: 1/1.3; width: auto;}  
-    .slider-images > img.active{top: 45%;left: 50%;}    
+    .heading-style-2{font-size: 25px;line-height: 35px;margin-bottom: 15px;}
+    p{font-size: 14px; line-height: 22px; margin-bottom: 10px;}
+    .social-icons a{width: 30px;height: 30px;}
+    .social-icons img{width: 13px;height: 13px;}
+    .slider-images{width: 65%;}
+    .slider-images > img {width: 230px;height: auto; aspect-ratio: 1/1.3;}    
 }
